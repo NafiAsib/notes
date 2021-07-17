@@ -2,8 +2,6 @@
 
 ## Dig
 
-## 
-
 ```bash
 dig examsspace.com
 dig examsspace.com +short # only showed the a records
