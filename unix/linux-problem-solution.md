@@ -16,3 +16,5 @@ set-default-sink noechosink
 
 save, exit and run `pulseaudio -k`
 
+\`\`
+
