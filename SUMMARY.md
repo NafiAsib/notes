@@ -7,4 +7,5 @@
 ## Unix
 
 * [Network Tools](unix/network-utility.md)
+* [Linux misc problems](unix/linux-problem-solution.md)
 
