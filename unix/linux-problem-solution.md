@@ -1,6 +1,6 @@
 # Linux misc problems
 
-### Background noise in discord
+## Background noise in discord
 
 ```bash
 sudo nvim /etc/pulse/default.pa
