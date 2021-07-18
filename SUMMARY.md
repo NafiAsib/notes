@@ -21,4 +21,8 @@
 
 * [Cloud Computing](cloud-computing/README.md)
   * [GCP](cloud-computing/gcp.md)
+* [Front End](front-end.md)
+* [CTF Tools](ctf-tools.md)
+* [Startup](startup/README.md)
+  * [Legal Issues](startup/legal-issues.md)
 
