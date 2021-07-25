@@ -7,11 +7,13 @@
   * [Bitbucket](git/bitbucket.md)
 * [Ansible](ansible/README.md)
   * [Getting Started](ansible/getting-started-ansible.md)
+  * [Desktop configuration](ansible/desktop-configuration-ansible.md)
 
 ## Unix
 
 * [Network Tools](unix/network-utility.md)
 * [Linux misc problems](unix/linux-problem-solution.md)
+* [CTF Tools](unix/ctf-tools.md)
 
 ## Linux
 
@@ -22,7 +24,8 @@
 * [Cloud Computing](cloud-computing/README.md)
   * [GCP](cloud-computing/gcp.md)
 * [Front End](front-end.md)
-* [CTF Tools](ctf-tools.md)
 * [Startup](startup/README.md)
   * [Legal Issues](startup/legal-issues.md)
+* [terminal](terminal/README.md)
+  * [zsh](terminal/zsh.md)
 

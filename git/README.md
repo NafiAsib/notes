@@ -49,24 +49,24 @@ _**My rebase strategy \(ToDo: detail explanation\)**_
 
 ```bash
 #checkout to your feature branch
-git checkout my_working_branch
+$ git checkout my_working_branch
 
 #do your changes, then
-git add .
-git commit -m 'my meaningful commit message'
+$ git add .
+$ git commit -m 'my meaningful commit message'
 
 #checkout to master branch and pull 
 #the changes your fellow colleagues did
-git checkout dev
-git pull
+$ git checkout dev
+$ git pull
 
 #now checkout to your branch to rebase
-git checkout my_working_branch
-git pull --rebase
-git rebase dev
+$ git checkout my_working_branch
+$ git pull --rebase
+$ git rebase dev
 #now push & make a PR
 #make sure to tick on close branch in PR
-git push
+$ git push
 ```
 
 _**Reset rebase**_
@@ -74,8 +74,8 @@ _**Reset rebase**_
 * [https://opensource.com/article/18/6/git-reset-revert-rebase-commands](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
 
 ```bash
-git reflog
-git reset --hard HEAD@{5}
+$ git reflog
+$ git reset --hard HEAD@{5}
 ```
 
 ## Basics
@@ -83,17 +83,17 @@ git reset --hard HEAD@{5}
 ### git setup
 
 ```bash
-git config --global user.name "NafiAsib"
-git config --global user.email "nafi.asib@gmail.com"
-git config --global color.ui true         # enable colored output in terminal
-git config --global core.editor nvim
+$ git config --global user.name "NafiAsib"
+$ git config --global user.email "nafi.asib@gmail.com"
+$ git config --global color.ui true         # enable colored output in terminal
+$ git config --global core.editor nvim
 
 # Now setup ssh key
-cd ~/.ssh
-ssh-keygen -t rsa -C "nafi.asib@gmail.com" -f "id_rsa_github"
+$ cd ~/.ssh
+$ ssh-keygen -t rsa -C "nafi.asib@gmail.com" -f "id_rsa_github"
 
 # To confirm
-ssh -T git@github.com
+$ ssh -T git@github.com
 > Hi NafiAsib! You've successfully authenticated, but Github does
 > not provide shell access.
 
@@ -108,48 +108,48 @@ git config --global core.autocrlf true    # only in windows
 ### git dir initialization
 
 ```bash
-git init
-git add .
-git commit -m "commit message"
-git branch -M main
-git remote add origin repo-link
-git push -u origin main
+$ git init
+$ git add .
+$ git commit -m "commit message"
+$ git branch -M main
+$ git remote add origin repo-link
+$ git push -u origin main
 ```
 
 ### remove a file
 
 ```bash
-git rm
+$ git rm
 ```
 
 _**If you want to remove the file from the Git repository and the filesystem**_
 
 ```bash
-git rm file1.txt
-git commit -m "remove file1.txt"
+$ git rm file1.txt
+$ git commit -m "remove file1.txt"
 ```
 
 _**But if you want to remove the file only from the Git repository and not remove it from the filesystem**_
 
 ```bash
-git rm --cached file1.txt
-git commit -m "remove file1.txt"
+$ git rm --cached file1.txt
+$ git commit -m "remove file1.txt"
 ```
 
 **for directory**
 
 ```bash
-git rm -r dir-name
+$ git rm -r dir-name
 ```
 
 _**And to push changes to remote repo**_
 
 ```bash
-git push origin branch_name
-git checkout master
-git fetch upstream
-git reset --hard upstream/master
-git push --force
+$ git push origin branch_name
+$ git checkout master
+$ git fetch upstream
+$ git reset --hard upstream/master
+$ git push --force
 ```
 
 [https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
@@ -163,8 +163,8 @@ not resolve host: github.com
 _**Solve**_
 
 ```bash
-git config --global --unset http.proxy
-git config --global --unset https.proxy
+$ git config --global --unset http.proxy
+$ git config --global --unset https.proxy
 ```
 
 _**restart terminal**_
@@ -172,25 +172,25 @@ _**restart terminal**_
 #### git ammend
 
 ```bash
-git commit --amend
+$ git commit --amend
 ```
 
 ```bash
-git pull -> git fetch && git merge
-git pull --rebase -> git fetch && git rebase
+$ git pull -> git fetch && git merge
+$ git pull --rebase -> git fetch && git rebase
 ```
 
 #### git squash last X commits
 
 ```bash
-git reset --soft HEAD~X     # last X commits
-git commit -m "new commit message"
+$ git reset --soft HEAD~X     # last X commits
+$ git commit -m "new commit message"
 ```
 
 _**using interactive rebase**_
 
 ```bash
-git rebase -i HEAD~5
+$ git rebase -i HEAD~5
 # replace pick to squash to commits you want to squash
 ```
 
@@ -199,12 +199,12 @@ git rebase -i HEAD~5
 #### git merge conflicts
 
 ```bash
-git pull dev
-git checkout feature_branch
-git pull origin dev
-git add .
-git commit -m 'merged message'
-git push
+$ git pull dev
+$ git checkout feature_branch
+$ git pull origin dev
+$ git add .
+$ git commit -m 'merged message'
+$ git push
 ```
 
 #### fatal: refusing to merge unrelated histories
@@ -214,27 +214,33 @@ git push
   [The “fatal: refusing to merge unrelated histories” Git error](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
 
 ```bash
-git pull origin master --allow-unrelated-histories
+$ git pull origin master --allow-unrelated-histories
 ```
 
 #### reset last commit
 
 ```bash
-git reset --soft HEAD~1
+$ git reset --soft HEAD~1
 ```
 
 #### [Switching remote URLs from HTTPS to SSH](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
 
 ```bash
-git remote -v
-> origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
-> origin  git@github.com:USERNAME/REPOSITORY.git (push)
+$ git remote -v
+> origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+> origin  https://github.com/USERNAME/REPOSITORY.git (push)
 
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+$ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 
 $ git remote -v
 # Verify new remote URL
-> origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
-> origin  https://github.com/USERNAME/REPOSITORY.git (push)
+> origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
+> origin  git@github.com:USERNAME/REPOSITORY.git (push)
 ```
+
+
+
+#### Create empty branch
+
+* [StackOverflow answer](https://stackoverflow.com/questions/34100048/create-empty-branch-on-github/55943394)
 
