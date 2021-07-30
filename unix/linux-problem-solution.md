@@ -1,3 +1,7 @@
+---
+description: 'Solutions of weird, misc problems I face with Linux'
+---
+
 # Linux misc problems
 
 ## Background noise in discord
