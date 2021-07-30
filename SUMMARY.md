@@ -8,19 +8,6 @@
 * [Ansible](ansible/README.md)
   * [Getting Started](ansible/getting-started-ansible.md)
   * [Desktop configuration](ansible/desktop-configuration-ansible.md)
-
-## Unix
-
-* [Network Tools](unix/network-utility.md)
-* [Linux misc problems](unix/linux-problem-solution.md)
-* [CTF Tools](unix/ctf-tools.md)
-
-## Linux
-
-* [systemctl](linux/systemctl.md)
-
----
-
 * [Cloud Computing](cloud-computing/README.md)
   * [GCP](cloud-computing/gcp.md)
 * [Front End](front-end.md)
@@ -30,4 +17,8 @@
   * [zsh](terminal/zsh.md)
 * [flutter](flutter/README.md)
   * [cubit](flutter/cubit.md)
+* [Network Tools](network-utility.md)
+* [CTF Tools](ctf-tools.md)
+* [Linux misc problems](linux-problem-solution.md)
+* [systemctl](systemctl.md)
 
