@@ -1,3 +1,7 @@
+---
+description: State management solution for flutter. Subset of bloc
+---
+
 # cubit
 
 ### Docs
