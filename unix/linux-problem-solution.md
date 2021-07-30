@@ -18,5 +18,5 @@ set-default-source noechosource
 set-default-sink noechosink
 ```
 
-save, exit and run `pulseaudio -k`
+save, exit and run `pulseaudio -k` . There'll be new non-echo mic in sounds. Use that option for discord communication.
 
