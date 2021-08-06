@@ -1,7 +1,5 @@
 # Angular
 
-* [Official Doc](https://angular.io/docs)
-
 
 
 * Change property value dynamically with every keypress. _backspace counts too_
@@ -16,4 +14,8 @@ onValueChange(newValue) {
   console.log(newValue)
 }
 ```
+
+#### Resources
+
+* [Official Doc](https://angular.io/docs)
 
