@@ -10,6 +10,8 @@
   * [Desktop configuration](ansible/desktop-configuration-ansible.md)
 * [Cloud Computing](cloud-computing/README.md)
   * [GCP](cloud-computing/gcp.md)
+* [Web Dev](web-dev/README.md)
+  * [Web Cache/HTTP Caching Headers](web-dev/web-cache-http-caching-headers.md)
 * [Front End](front-end/README.md)
   * [Angular](front-end/angular.md)
 * [Startup](startup/README.md)
@@ -22,6 +24,4 @@
 * [CTF Tools](ctf-tools.md)
 * [Linux misc problems](linux-problem-solution.md)
 * [systemctl](systemctl.md)
-* [Web Dev](web-dev/README.md)
-  * [Web Cache/HTTP Caching Headers](web-dev/web-cache-http-caching-headers.md)
 
