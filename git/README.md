@@ -1,86 +1,8 @@
 # Git
 
-## git rebase
-
-_**rebase strategy of Pavel vaia**_
-
-```bash
-git checkout dev
-git pull
-git checkout bugfix/re-add-modal-fix
-#remember to rebase your feature branch into protected branch(in our case; dev)
-git rebase dev
-
-#if there are conflicts in some files
-#read instructions from the terminal and act accordingly
-
-#terimal will give you hints to do the following 
-git add .
-git rebase --continue
-
-#if there are conflicts in some files
-#fix the conflicts and
-
-git add .
-git rebase --continue
-
-#go on like this 
-#till you have resolved conflicts throughout all the commits of 
-#bugfix/re-add-modal-fix and dev
-
-#now that you have resolved conflicts of all the commits
-#you are free to commit your changes
-
-git commit -m "rebased dev"
-git pull
-git push
-
-#you are not done yet
-#go to git remote repository to create a pull request
-#while creating a pull request, make sure to check 
-#1. squash commits
-#2. close source branch
-
-#now you are done 
-#happy coding!
-```
-
-_**My rebase strategy \(ToDo: detail explanation\)**_
-
-```bash
-#checkout to your feature branch
-$ git checkout my_working_branch
-
-#do your changes, then
-$ git add .
-$ git commit -m 'my meaningful commit message'
-
-#checkout to master branch and pull 
-#the changes your fellow colleagues did
-$ git checkout dev
-$ git pull
-
-#now checkout to your branch to rebase
-$ git checkout my_working_branch
-$ git pull --rebase
-$ git rebase dev
-#now push & make a PR
-#make sure to tick on close branch in PR
-$ git push
-```
-
-_**Reset rebase**_
-
-* [https://opensource.com/article/18/6/git-reset-revert-rebase-commands](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
-
-```bash
-$ git reflog
-$ git reset --hard HEAD@{5}
-```
-
 ## Basics
-
-### git setup
+---
+* ### git setup
 
 ```bash
 $ git config --global user.name "NafiAsib"
@@ -91,6 +13,7 @@ $ git config --global core.editor nvim
 # Now setup ssh key
 $ cd ~/.ssh
 $ ssh-keygen -t rsa -C "nafi.asib@gmail.com" -f "id_rsa_github"
+# $ ssh-keygen -t rsa
 
 # To confirm
 $ ssh -T git@github.com
@@ -98,14 +21,14 @@ $ ssh -T git@github.com
 > not provide shell access.
 
 # Deprecated
-git config --global credential.helper cache --timeout=3600 # cache password for 3600 second
-git config --global credential.helper cache
-git config --global --unset credential.helper
-git config --global core.editor code      # only in windows
-git config --global core.autocrlf true    # only in windows
+# git config --global credential.helper cache --timeout=3600 # cache password for 3600 second
+# git config --global credential.helper cache
+# git config --global --unset credential.helper
+# git config --global core.editor code      # only in windows
+# git config --global core.autocrlf true    # only in windows
 ```
 
-### git dir initialization
+* ### git directory initialization
 
 ```bash
 $ git init
@@ -116,33 +39,16 @@ $ git remote add origin repo-link
 $ git push -u origin main
 ```
 
-### remove a file
+* ### remove a file
 
 ```bash
-$ git rm
+$ git rm file-name # from both git and locally
+$ git rm --cached file-name # from only git
+$ git rm -r directory-name # directory
+# commit and push
 ```
 
-_**If you want to remove the file from the Git repository and the filesystem**_
-
-```bash
-$ git rm file1.txt
-$ git commit -m "remove file1.txt"
-```
-
-_**But if you want to remove the file only from the Git repository and not remove it from the filesystem**_
-
-```bash
-$ git rm --cached file1.txt
-$ git commit -m "remove file1.txt"
-```
-
-**for directory**
-
-```bash
-$ git rm -r dir-name
-```
-
-_**And to push changes to remote repo**_
+_**to push changes to remote repo**_
 
 ```bash
 $ git push origin branch_name
@@ -152,8 +58,25 @@ $ git reset --hard upstream/master
 $ git push --force
 ```
 
-[https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
+#### reset last commit
 
+```bash
+$ git reset --soft HEAD~1
+```
+
+#### git merge conflicts
+
+```bash
+$ git pull dev
+$ git checkout feature_branch
+$ git pull origin dev
+$ git add .
+$ git commit -m 'merged message'
+$ git push
+```
+## Errors & fix
+---
+*
 ```bash
 Error
 fatal: unable to access 'https://github.com/sitndeal/sitndeal.git/': Could
@@ -169,15 +92,98 @@ $ git config --global --unset https.proxy
 
 _**restart terminal**_
 
-#### git ammend
+## git rebase
+---
+
+_**rebase strategy of Pavel vaia**_
 
 ```bash
-$ git commit --amend
+$ git checkout dev
+$ git pull
+$ git checkout bugfix/re-add-modal-fix
+#remember to rebase your feature branch into protected branch(in our case; dev)
+$ git rebase dev
+
+#if there are conflicts in some files
+#read instructions from the terminal and act accordingly
+
+#terimal will give you hints to do the following 
+$ git add .
+$ git rebase --continue
+
+#if there are conflicts in some files
+#fix the conflicts and
+
+$ git add .
+$ git rebase --continue
+
+#go on like this 
+#till you have resolved conflicts throughout all the commits of 
+#bugfix/re-add-modal-fix and dev
+
+#now that you have resolved conflicts of all the commits
+#you are free to commit your changes
+
+$ git commit -m "rebased dev"
+$ git pull
+$ git push
+
+#you are not done yet
+#go to git remote repository to create a pull request
+#while creating a pull request, make sure to check 
+#1. squash commits
+#2. close source branch
+
+#now you are done 
+#happy coding!
+```
+
+_**My rebase strategy \(ToDo: detail explanation\)**_
+
+```bash
+#checkout to feature branch
+$ git checkout feature-branch
+
+#do changes, then
+$ git add .
+$ git commit -m 'meaningful commit message'
+
+#checkout to master branch and pull 
+#the changes
+$ git checkout dev
+$ git pull
+
+#now checkout to feature branch to rebase
+$ git checkout feature-branch
+$ git pull --rebase
+$ git rebase dev
+
+#now push & make a PR
+#make sure to tick on close branch in PR
+$ git push
+```
+
+_**Reset rebase**_
+
+* [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
+
+```bash
+$ git reflog
+$ git reset --hard HEAD@{5}
+```
+
+
+#### git ammend
+[git commit --amend and other methods of rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history)
+
+```bash
+$ git commit --amend # prompt editor to change most recent Git commit message
+$ git commit --amend -m "an updated commit message" # doesn't prompt editor
 ```
 
 ```bash
-$ git pull -> git fetch && git merge
-$ git pull --rebase -> git fetch && git rebase
+git pull == git fetch && git merge
+git pull --rebase == git fetch && git rebase
 ```
 
 #### git squash last X commits
@@ -196,16 +202,7 @@ $ git rebase -i HEAD~5
 
 **very much risky** ⇒ learn more
 
-#### git merge conflicts
 
-```bash
-$ git pull dev
-$ git checkout feature_branch
-$ git pull origin dev
-$ git add .
-$ git commit -m 'merged message'
-$ git push
-```
 
 #### fatal: refusing to merge unrelated histories
 
@@ -217,13 +214,9 @@ $ git push
 $ git pull origin master --allow-unrelated-histories
 ```
 
-#### reset last commit
 
-```bash
-$ git reset --soft HEAD~1
-```
 
-#### [Switching remote URLs from HTTPS to SSH](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
+### [Switching remote URLs from HTTPS to SSH](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
 
 ```bash
 $ git remote -v
@@ -238,9 +231,7 @@ $ git remote -v
 > origin  git@github.com:USERNAME/REPOSITORY.git (push)
 ```
 
-
-
-#### Create empty branch
-
-* [StackOverflow answer](https://stackoverflow.com/questions/34100048/create-empty-branch-on-github/55943394)
+### Links
+* [Force git pull to overwrite local files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
+* [Create empty branch](https://stackoverflow.com/questions/34100048/create-empty-branch-on-github/55943394)
 
