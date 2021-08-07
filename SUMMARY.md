@@ -8,6 +8,7 @@
   * [Getting Started](ansible/getting-started-ansible.md)
   * [Desktop configuration](ansible/desktop-configuration-ansible.md)
 * [Cloud Computing](cloud-computing/README.md)
+  * [AWS](cloud-computing/aws.md)
   * [GCP](cloud-computing/gcp.md)
 * [Web Dev](web-dev/README.md)
   * [Web Cache/HTTP Caching Headers](web-dev/web-cache-http-caching-headers.md)
