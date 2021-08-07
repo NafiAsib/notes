@@ -1,7 +1,6 @@
 # Git
 
 ## Basics
----
 * ### git setup
 
 ```bash
@@ -34,8 +33,8 @@ $ ssh -T git@github.com
 $ git init
 $ git add .
 $ git commit -m "commit message"
-$ git branch -M main
-$ git remote add origin repo-link
+$ git branch -M main # change default branch to main from master
+$ git remote add origin repo-link # https link of remote directory
 $ git push -u origin main
 ```
 
@@ -65,17 +64,48 @@ $ git reset --soft HEAD~1
 ```
 
 #### git merge conflicts
-
+To conflict merge between two branch, first pull the other branch in your working branch. Then merge all conflict and push. It's better to squash your commits to make the commit tree clean.
 ```bash
-$ git pull dev
-$ git checkout feature_branch
+$ git pull dev # dev is the already pushed branch
+$ git checkout feature_branch # working branch
 $ git pull origin dev
+# fix all merge conflict
 $ git add .
 $ git commit -m 'merged message'
 $ git push
 ```
+#### git squash last X commits
+
+```bash
+$ git reset --soft HEAD~X     # last X commits
+$ git commit -m "new commit message"
+```
+_**Reset rebase**_
+
+* [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
+
+```bash
+$ git reflog
+$ git reset --hard HEAD@{5}
+```
+
+
+#### git ammend
+* [git commit --amend and other methods of rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history)
+
+```bash
+$ git commit --amend # prompt editor to change most recent Git commit message
+$ git commit --amend -m "an updated commit message" # doesn't prompt editor
+```
+
+_**using interactive rebase**_
+
+```bash
+$ git rebase -i HEAD~5
+# replace pick to squash to commits you want to squash
+```
 ## Errors & fix
----
+
 *
 ```bash
 Error
@@ -93,7 +123,7 @@ $ git config --global --unset https.proxy
 _**restart terminal**_
 
 ## git rebase
----
+
 
 _**rebase strategy of Pavel vaia**_
 
@@ -138,7 +168,7 @@ $ git push
 #happy coding!
 ```
 
-_**My rebase strategy \(ToDo: detail explanation\)**_
+_**My rebase strategy \(TODO: detail explanation with branch tree\)**_
 
 ```bash
 #checkout to feature branch
@@ -163,59 +193,6 @@ $ git rebase dev
 $ git push
 ```
 
-_**Reset rebase**_
-
-* [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
-
-```bash
-$ git reflog
-$ git reset --hard HEAD@{5}
-```
-
-
-#### git ammend
-[git commit --amend and other methods of rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history)
-
-```bash
-$ git commit --amend # prompt editor to change most recent Git commit message
-$ git commit --amend -m "an updated commit message" # doesn't prompt editor
-```
-
-```bash
-git pull == git fetch && git merge
-git pull --rebase == git fetch && git rebase
-```
-
-#### git squash last X commits
-
-```bash
-$ git reset --soft HEAD~X     # last X commits
-$ git commit -m "new commit message"
-```
-
-_**using interactive rebase**_
-
-```bash
-$ git rebase -i HEAD~5
-# replace pick to squash to commits you want to squash
-```
-
-**very much risky** ⇒ learn more
-
-
-
-#### fatal: refusing to merge unrelated histories
-
-* reference
-
-  [The “fatal: refusing to merge unrelated histories” Git error](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
-
-```bash
-$ git pull origin master --allow-unrelated-histories
-```
-
-
-
 ### [Switching remote URLs from HTTPS to SSH](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
 
 ```bash
@@ -234,4 +211,13 @@ $ git remote -v
 ### Links
 * [Force git pull to overwrite local files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
 * [Create empty branch](https://stackoverflow.com/questions/34100048/create-empty-branch-on-github/55943394)
+* [merge unrelated histories](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
+```bash
+$ git pull origin master --allow-unrelated-histories
+```
 
+* ### Misc
+```bash
+git pull == git fetch && git merge
+git pull --rebase == git fetch && git rebase
+```
