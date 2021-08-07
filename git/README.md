@@ -1,7 +1,8 @@
 # Git
 
 ## Basics
-* ### git setup
+
+* **git setup**
 
 ```bash
 $ git config --global user.name "NafiAsib"
@@ -27,7 +28,7 @@ $ ssh -T git@github.com
 # git config --global core.autocrlf true    # only in windows
 ```
 
-* ### git directory initialization
+* **git directory initialization**
 
 ```bash
 $ git init
@@ -38,7 +39,7 @@ $ git remote add origin repo-link # https link of remote directory
 $ git push -u origin main
 ```
 
-* ### remove a file
+* **remove a file**
 
 ```bash
 $ git rm file-name # from both git and locally
@@ -64,7 +65,9 @@ $ git reset --soft HEAD~1
 ```
 
 #### git merge conflicts
+
 To conflict merge between two branch, first pull the other branch in your working branch. Then merge all conflict and push. It's better to squash your commits to make the commit tree clean.
+
 ```bash
 $ git pull dev # dev is the already pushed branch
 $ git checkout feature_branch # working branch
@@ -74,12 +77,14 @@ $ git add .
 $ git commit -m 'merged message'
 $ git push
 ```
+
 #### git squash last X commits
 
 ```bash
 $ git reset --soft HEAD~X     # last X commits
 $ git commit -m "new commit message"
 ```
+
 _**Reset rebase**_
 
 * [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
@@ -89,8 +94,8 @@ $ git reflog
 $ git reset --hard HEAD@{5}
 ```
 
-
 #### git ammend
+
 * [git commit --amend and other methods of rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history)
 
 ```bash
@@ -104,9 +109,10 @@ _**using interactive rebase**_
 $ git rebase -i HEAD~5
 # replace pick to squash to commits you want to squash
 ```
+
 ## Errors & fix
 
-*
+* 
 ```bash
 Error
 fatal: unable to access 'https://github.com/sitndeal/sitndeal.git/': Could
@@ -123,7 +129,6 @@ $ git config --global --unset https.proxy
 _**restart terminal**_
 
 ## git rebase
-
 
 _**rebase strategy of Pavel vaia**_
 
@@ -209,15 +214,19 @@ $ git remote -v
 ```
 
 ### Links
+
 * [Force git pull to overwrite local files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
 * [Create empty branch](https://stackoverflow.com/questions/34100048/create-empty-branch-on-github/55943394)
 * [merge unrelated histories](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
-```bash
-$ git pull origin master --allow-unrelated-histories
-```
 
-* ### Misc
-```bash
-git pull == git fetch && git merge
-git pull --rebase == git fetch && git rebase
-```
+  ```bash
+  $ git pull origin master --allow-unrelated-histories
+  ```
+
+* **Misc**
+
+  ```bash
+  git pull == git fetch && git merge
+  git pull --rebase == git fetch && git rebase
+  ```
+
