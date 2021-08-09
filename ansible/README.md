@@ -6,7 +6,7 @@ ansible-pull comes with ansible installation. No additional installation is requ
 
 **ansible-pull allows machine's to 'pull' ansible-playbooks from a git server & then run locally.**
 
-
+_No need to maintain a server. So, practiacally no single point of failure if github is used_
 
 ### Links
 
