@@ -13,7 +13,7 @@ $ git config --global core.editor nvim
 # Now setup ssh key
 $ cd ~/.ssh
 $ ssh-keygen -t rsa -C "nafi.asib@gmail.com" -f "id_rsa_github"
-# -t rsa ⇒ Specifies the type of key to create
+# -t rsa ⇒ Specifies the type of key to create. In this case, it's rsa
 # -C ⇒ comment
 # -f ⇒ filename
 
