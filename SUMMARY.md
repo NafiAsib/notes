@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Intro](README.md)
+* [Hello! 🖐](README.md)
 * [terminal](terminal/README.md)
   * [zsh](terminal/zsh.md)
 * [Git](git.md)

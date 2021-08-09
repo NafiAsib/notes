@@ -1,12 +1,12 @@
-# Intro
+# Hello! 🖐
 
-### My digital garden 🌱
+### This is my digital garden 🌱
 
-I basically dump my random thoughts, notes, tutorial \(written by me, for me 😃\), important\(!\) links here. It is managed by GitBook and hosted on [GitHub](https://github.com/NafiAsib/notes).
+I basically dump my random thoughts, notes, tutorial \(written by me, for me 😃\), important\(!\) links here. It is in the form of a [GitBook](https://www.gitbook.com/) and hosted on [GitHub](https://github.com/NafiAsib/notes).
 
 
 
-A list of similar type websites can be found [here](similar-websites.md).
+* _A list of similar type websites can be found_ [_here_](similar-websites.md)_._
 
 ### Thank you
 
