@@ -6,5 +6,7 @@ I basically dump my random thoughts, notes, tutorial \(written by me, for me ðŸ˜
 
 [Inspired from](https://joelhooks.com/digital-garden) 
 
+A list of similar type websites can be found here
+
 ### Thank you
 

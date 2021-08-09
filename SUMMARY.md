@@ -24,4 +24,5 @@
 * [Linux misc problems](linux-problem-solution.md)
 * [systemctl](systemctl.md)
 * [emojis & characters](emojis-and-characters.md)
+* [Similar websites](similar-websites.md)
 
