@@ -13,7 +13,9 @@ $ git config --global core.editor nvim
 # Now setup ssh key
 $ cd ~/.ssh
 $ ssh-keygen -t rsa -C "nafi.asib@gmail.com" -f "id_rsa_github"
-# $ ssh-keygen -t rsa
+# -t rsa ⇒ Specifies the type of key to create. In this case, it's rsa
+# -C ⇒ comment
+# -f ⇒ filename
 
 # To confirm
 $ ssh -T git@github.com
@@ -217,6 +219,7 @@ $ git remote -v
 
 * [Force git pull to overwrite local files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
 * [Create empty branch](https://stackoverflow.com/questions/34100048/create-empty-branch-on-github/55943394)
+* [ssh-keygen man page](https://man7.org/linux/man-pages/man1/ssh-keygen.1.html)
 * [merge unrelated histories](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
 
   ```bash

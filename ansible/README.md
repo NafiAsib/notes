@@ -2,11 +2,23 @@
 
 ## ansible-pull
 
-ansible-pull comes with ansible installation. No additional installation is required. 
+ansible-pull comes with ansible installation. No additional installation is required.
 
-**ansible-pull allows machine's to 'pull' ansible-playbooks from a git server & then run locally.**
+**ansible-pull allows machine's to 'pull' ansible-playbooks from a git server & then run them locally.**
 
-_No need to maintain a server. So, practiacally no single point of failure if github is used_
+_No need to maintain a central server. So, practically no single point of failure if GitHub is used_
+
+In a general ansible scenario,
+
+![normal ansible scenario](../.gitbook/assets/image%20%282%29.png)
+
+Here, ansible server centrally manages 4 machines. If one of the machine is unreachable for some reasons, ansible throws an error. But, what if you want your machine to be offline for a certain period of time? And only want them to run ansible-playbook in your specified time or time gaps?
+
+Here comes ansible-pull
+
+![typical ansible-pull scenario](../.gitbook/assets/image%20%283%29.png)
+
+Machines pull ansible-playbook from git server and run them locally, You can create cron jobs for specified users to have better control over ansible.
 
 ### Links
 
@@ -30,6 +42,4 @@ _No need to maintain a server. So, practiacally no single point of failure if gi
 * [Ansible-WSL](https://github.com/Wintus/Ansible-WSL)
 * [Setup](https://github.com/jasonwc/setup) - Ansible Playbooks for setting up an ops/ruby/elixir focused workstation
 * [Personal Ansible Desktop Configs](https://github.com/LearnLinuxTV/personal_ansible_desktop_configs) - great example of ansible-pull
-
-
 
