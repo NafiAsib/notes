@@ -5,7 +5,6 @@
   * [zsh](terminal/zsh.md)
 * [Git](git.md)
 * [Ansible](ansible/README.md)
-  * [Getting Started](ansible/getting-started-ansible.md)
   * [Desktop configuration](ansible/desktop-configuration-ansible.md)
 * [Cloud Computing](cloud-computing/README.md)
   * [AWS](cloud-computing/aws.md)

@@ -38,12 +38,5 @@ _I have a project on managing workstations with ansible-pull, do check it out_
 * [file module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/file_module.html)
 * [lookup](https://docs.ansible.com/ansible/latest/plugins/lookup.html)
 
-### Desktop configuration
-
-* [.dots](https://github.com/Addvilz/dots) - dotfiles with ansible
-* [Ansible-WSL](https://github.com/Wintus/Ansible-WSL)
-* [Setup](https://github.com/jasonwc/setup) - Ansible Playbooks for setting up an ops/ruby/elixir focused workstation
-* [Personal Ansible Desktop Configs](https://github.com/LearnLinuxTV/personal_ansible_desktop_configs) - great example of ansible-pull
-
 _**all figures are created by me with**_ [**FigJam**](https://www.figma.com/figjam/)\*\*\*\*
 
