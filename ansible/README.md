@@ -1,5 +1,13 @@
 # Ansible
 
+## ansible-pull
+
+ansible-pull comes with ansible installation. No additional installation is required. 
+
+**ansible-pull allows machine's to 'pull' ansible-playbooks from a git server & then run locally.**
+
+
+
 ### Links
 
 * [Get a variable with host username](https://stackoverflow.com/questions/26394096/how-do-i-get-a-variable-with-the-name-of-the-user-running-ansible)

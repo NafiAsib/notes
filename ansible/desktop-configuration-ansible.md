@@ -1,6 +1,8 @@
 # Desktop configuration
 
-`ansible-pull -U git-repo-link`  
+## [My ansible project](https://github.com/NafiAsib/ansible-dots)
+
+`ansible-pull -U git-repo-link --ask-become-pass`  
 
 
 
