@@ -3,6 +3,7 @@
 ### Resource
 
 * [cdnjs](https://cdnjs.com/) - Collection of CDNs
+* [CSS Gradient](https://cssgradient.io/) - Create customized css gradient easily
 
 ### Links
 
