@@ -2,6 +2,7 @@
 
 * [Hello! 🖐](README.md)
 * [terminal](terminal/README.md)
+  * [tmux](terminal/tmux.md)
   * [zsh](terminal/zsh.md)
 * [Git](git.md)
 * [Ansible](ansible/README.md)
