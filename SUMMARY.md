@@ -2,6 +2,7 @@
 
 * [Hello! 🖐](README.md)
 * [terminal](terminal/README.md)
+  * [dotfiles](terminal/dotfiles.md)
   * [tmux](terminal/tmux.md)
   * [zsh](terminal/zsh.md)
   * [command line tools](terminal/command-line-tools.md)
