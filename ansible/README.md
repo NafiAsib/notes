@@ -20,7 +20,7 @@ Here comes ansible-pull
 
 Machines pull ansible-playbook from git server and run them locally, You can create cron jobs for specified users to have better control over ansible.
 
-_I have a project on managing workstations with ansible-pull, do check it out_
+_I have a_ [_project_](https://github.com/NafiAsib/ansible-dots) _on managing workstations with ansible-pull, do check it out_
 
 ### Links
 
