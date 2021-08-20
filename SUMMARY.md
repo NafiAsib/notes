@@ -4,6 +4,7 @@
 * [terminal](terminal/README.md)
   * [tmux](terminal/tmux.md)
   * [zsh](terminal/zsh.md)
+  * [command line tools](terminal/command-line-tools.md)
 * [Git](git.md)
 * [Ansible](ansible/README.md)
   * [Desktop configuration](ansible/desktop-configuration-ansible.md)
