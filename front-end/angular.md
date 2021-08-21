@@ -22,5 +22,5 @@ onValueChange(newValue) {
 #### Styles
 
 * [ESLint Angular](https://github.com/angular-eslint/angular-eslint)
-* [ESLint w/ Prettier & AirBnB styleguide](https://dev.to/bzvyagintsev/migrate-angular-app-to-eslint-with-prettier-airbnb-styleguide-husky-and-lint-staged-862)
+* [ESLint w/ Prettier & AirBnB styleguide](https://dev.to/bzvyagintsev/migrate-angular-app-to-eslint-with-prettier-airbnb-styleguide-husky-and-lint-staged-862) - I prefer json config over js
 
