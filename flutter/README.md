@@ -8,6 +8,10 @@
 
 
 
+* [Flutter Routes & Navigation – Parameters, Named Routes, onGenerateRoute](https://resocoder.com/2019/04/27/flutter-routes-navigation-parameters-named-routes-ongenerateroute/) -- Reso Coder
+
+
+
 ### Architectural
 
 * [How to architect a production-level app in Flutter](https://medium.com/@erkansahin/how-to-architect-a-production-level-app-in-flutter-251335cae1bb) - Journey of a startups architectural problems
