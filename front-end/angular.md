@@ -19,3 +19,8 @@ onValueChange(newValue) {
 
 * [Official Doc](https://angular.io/docs)
 
+#### Styles
+
+* [ESLint Angular](https://github.com/angular-eslint/angular-eslint)
+* [ESLint w/ Prettier & AirBnB styleguide](https://dev.to/bzvyagintsev/migrate-angular-app-to-eslint-with-prettier-airbnb-styleguide-husky-and-lint-staged-862)
+
