@@ -20,6 +20,7 @@
 * [Front End](front-end/README.md)
   * [React](front-end/react.md)
   * [Angular](front-end/angular.md)
+* [Software Architecture](software-architecture.md)
 * [flutter](flutter/README.md)
   * [cubit](flutter/cubit.md)
 * [Startup](startup/README.md)
@@ -30,5 +31,4 @@
 * [systemctl](systemctl.md)
 * [emojis & characters](emojis-and-characters.md)
 * [Similar websites](similar-websites.md)
-* [Software Architecture](software-architecture.md)
 
