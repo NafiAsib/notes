@@ -30,4 +30,5 @@
 * [systemctl](systemctl.md)
 * [emojis & characters](emojis-and-characters.md)
 * [Similar websites](similar-websites.md)
+* [Software Architecture](software-architecture.md)
 
