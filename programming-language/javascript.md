@@ -1,6 +1,6 @@
 # JavaScript
 
-* Making JS objects immutable
+#### Making JS objects immutable
 
 ```javascript
 const person = {
