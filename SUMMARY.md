@@ -8,6 +8,7 @@
   * [command line tools](terminal/command-line-tools.md)
 * [Git](git/README.md)
   * [git workflows](git/git-workflows.md)
+  * [basics](git/basics.md)
 * [Ansible](ansible/README.md)
   * [Desktop configuration](ansible/desktop-configuration-ansible.md)
 * [Cloud Computing](cloud-computing/README.md)
@@ -35,4 +36,3 @@
 * [Programming Language](programming-language/README.md)
   * [JavaScript](programming-language/javascript.md)
   * [C++](programming-language/cpp.md)
-
