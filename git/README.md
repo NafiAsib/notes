@@ -114,7 +114,8 @@ $ git rebase -i HEAD~5
 
 ## Errors & fix
 
-* 
+*
+
 ```bash
 Error
 fatal: unable to access 'https://github.com/sitndeal/sitndeal.git/': Could
@@ -130,75 +131,7 @@ $ git config --global --unset https.proxy
 
 _**restart terminal**_
 
-## git rebase
 
-_**rebase strategy of Pavel vaia**_
-
-```bash
-$ git checkout dev
-$ git pull
-$ git checkout bugfix/re-add-modal-fix
-#remember to rebase your feature branch into protected branch(in our case; dev)
-$ git rebase dev
-
-#if there are conflicts in some files
-#read instructions from the terminal and act accordingly
-
-#terimal will give you hints to do the following 
-$ git add .
-$ git rebase --continue
-
-#if there are conflicts in some files
-#fix the conflicts and
-
-$ git add .
-$ git rebase --continue
-
-#go on like this 
-#till you have resolved conflicts throughout all the commits of 
-#bugfix/re-add-modal-fix and dev
-
-#now that you have resolved conflicts of all the commits
-#you are free to commit your changes
-
-$ git commit -m "rebased dev"
-$ git pull
-$ git push
-
-#you are not done yet
-#go to git remote repository to create a pull request
-#while creating a pull request, make sure to check 
-#1. squash commits
-#2. close source branch
-
-#now you are done 
-#happy coding!
-```
-
-_**My rebase strategy \(TODO: detail explanation with branch tree\)**_
-
-```bash
-#checkout to feature branch
-$ git checkout feature-branch
-
-#do changes, then
-$ git add .
-$ git commit -m 'meaningful commit message'
-
-#checkout to master branch and pull 
-#the changes
-$ git checkout dev
-$ git pull
-
-#now checkout to feature branch to rebase
-$ git checkout feature-branch
-$ git pull --rebase
-$ git rebase dev
-
-#now push & make a PR
-#make sure to tick on close branch in PR
-$ git push
-```
 
 ### [Switching remote URLs from HTTPS to SSH](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
 
@@ -220,16 +153,14 @@ $ git remote -v
 * [Force git pull to overwrite local files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
 * [Create empty branch](https://stackoverflow.com/questions/34100048/create-empty-branch-on-github/55943394)
 * [ssh-keygen man page](https://man7.org/linux/man-pages/man1/ssh-keygen.1.html)
-* [merge unrelated histories](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
+*   [merge unrelated histories](https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error)
 
-  ```bash
-  $ git pull origin master --allow-unrelated-histories
-  ```
+    ```bash
+    $ git pull origin master --allow-unrelated-histories
+    ```
+*   **Misc**
 
-* **Misc**
-
-  ```bash
-  git pull == git fetch && git merge
-  git pull --rebase == git fetch && git rebase
-  ```
-
+    ```bash
+    git pull == git fetch && git merge
+    git pull --rebase == git fetch && git rebase
+    ```

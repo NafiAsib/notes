@@ -7,6 +7,7 @@
   * [zsh](terminal/zsh.md)
   * [command line tools](terminal/command-line-tools.md)
 * [Git](git/README.md)
+  * [merging strategy](git/merging-strategy.md)
   * [git workflows](git/git-workflows.md)
   * [basics](git/basics.md)
 * [Ansible](ansible/README.md)
