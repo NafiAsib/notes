@@ -5,24 +5,12 @@
 * **git setup**
 
 ```bash
-$ git config --global user.name "NafiAsib"
-$ git config --global user.email "nafi.asib@gmail.com"
-$ git config --global color.ui true         # enable colored output in terminal
-$ git config --global core.editor nvim
+git config --global user.name "NafiAsib"
+git config --global user.email "nafi.asib@gmail.com"
+git config --global color.ui true # enable colored output in terminal
+git config --global core.editor nvim
 
-# Now setup ssh key
-$ cd ~/.ssh
-$ ssh-keygen -t rsa -C "nafi.asib@gmail.com" -f "id_rsa_github"
-# -t rsa ⇒ Specifies the type of key to create. In this case, it's rsa
-# -C ⇒ comment
-# -f ⇒ filename
-
-# To confirm
-$ ssh -T git@github.com
-> Hi NafiAsib! You've successfully authenticated, but Github does
-> not provide shell access.
-
-# Deprecated
+# ↓ OLD
 # git config --global credential.helper cache --timeout=3600 # cache password for 3600 second
 # git config --global credential.helper cache
 # git config --global --unset credential.helper
@@ -30,37 +18,48 @@ $ ssh -T git@github.com
 # git config --global core.autocrlf true    # only in windows
 ```
 
+* **SSH key**
+
+```bash
+cd ~/.ssh
+ssh-keygen -t rsa -C "nafi.asib@gmail.com" -f "id_rsa_github"
+# -t rsa ⇒ Specifies the type of key to create. In this case, it's rsa
+# -C ⇒ comment
+# -f ⇒ filename
+```
+
+Now copy the content of `id_rsa_github.pub` and set as SSH key in GitHub.
+
+You can confirm that SSH is okay by typing `ssh -T git@github.com`
+
+If you see following message, you're done!
+
+```bash
+Hi NafiAsib! You've successfully authenticated, but Github does
+not provide shell access.
+```
+
 * **git directory initialization**
 
 ```bash
-$ git init
-$ git add .
-$ git commit -m "commit message"
-$ git branch -M main # change default branch to main from master
-$ git remote add origin repo-link # https link of remote directory
-$ git push -u origin main
+git init
+git add .
+git commit -m "commit message"
+git branch -M main # change default branch to main from master
+git remote add origin repo-link # https link of remote directory
+git push -u origin main
 ```
 
 * **remove a file**
 
 ```bash
-$ git rm file-name # from both git and locally
-$ git rm --cached file-name # from only git
-$ git rm -r directory-name # directory
+git rm file-name # from both git and locally
+git rm --cached file-name # from only git
+git rm -r directory-name # directory
 # commit and push
 ```
 
-_**to push changes to remote repo**_
-
-```bash
-$ git push origin branch_name
-$ git checkout master
-$ git fetch upstream
-$ git reset --hard upstream/master
-$ git push --force
-```
-
-#### reset last commit
+#### &#x20;reset last commit
 
 ```bash
 $ git reset --soft HEAD~1
@@ -68,7 +67,7 @@ $ git reset --soft HEAD~1
 
 #### git merge conflicts
 
-To conflict merge between two branch, first pull the other branch in your working branch. Then merge all conflict and push. It's better to squash your commits to make the commit tree clean.
+To solve merge conflict between two branch, first pull the other branch in your working branch. Then merge all conflict and push. It's better to squash your commits to make the commit tree clean.
 
 ```bash
 $ git pull dev # dev is the already pushed branch
