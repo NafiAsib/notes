@@ -23,6 +23,7 @@
   * [React](front-end/react/README.md)
     * [Lint](front-end/react/react-lint.md)
   * [Angular](front-end/angular.md)
+  * [Tailwind CSS](front-end/tailwind-css.md)
 * [Software Architecture](software-architecture.md)
 * [flutter](flutter/README.md)
   * [cubit](flutter/cubit.md)
