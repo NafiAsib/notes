@@ -7,3 +7,4 @@
 
 
 * [Automatic Class Sorting with Prettier](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+* [Sorting Tailwind CSS Classes Automatically with Prettier](https://www.youtube.com/watch?v=\_CntOc4hBcg) (↑ Video on previous article by Tailwind Labs)
