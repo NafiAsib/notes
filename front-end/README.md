@@ -2,6 +2,10 @@
 
 * [npm & yarn equivalent](https://devhints.io/yarn)
 
+#### CSS
+
+* [How To Use Opacity and Transparency to Create a Modal in CSS](https://www.digitalocean.com/community/tutorials/how-to-use-opacity-and-transparency-to-create-a-modal-in-css) - DigitalOcean
+
 ### Resource
 
 * [cdnjs](https://cdnjs.com/) - Collection of CDNs
@@ -13,4 +17,3 @@
 
 * [Nodejs install methods](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
 * [Hex to RGB/ARGB converter](http://hex2rgba.devoth.com/)
-
