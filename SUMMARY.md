@@ -39,3 +39,5 @@
 * [Programming Language](programming-language/README.md)
   * [JavaScript](programming-language/javascript.md)
   * [C++](programming-language/cpp.md)
+* [Google Docs](google-docs/README.md)
+  * [Spreadsheet](google-docs/spreadsheet.md)
