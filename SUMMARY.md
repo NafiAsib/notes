@@ -16,6 +16,7 @@
   * [AWS](cloud-computing/aws.md)
   * [GCP](cloud-computing/gcp.md)
 * [Web Dev](web-dev/README.md)
+  * [husky](web-dev/husky.md)
   * [Web Cache/HTTP Caching Headers](web-dev/web-cache-http-caching-headers.md)
   * [package manger](web-dev/package-manger.md)
 * [Back End](back-end/README.md)
