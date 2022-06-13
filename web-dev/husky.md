@@ -1,5 +1,5 @@
 ---
-description: trigger scripts on git hook
+description: Git hooks for Node.js
 ---
 
 # husky
