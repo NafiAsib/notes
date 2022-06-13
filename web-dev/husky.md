@@ -6,7 +6,7 @@ description: Git hooks for Node.js
 
 git provides a way to execute scripts before or after an event such as commit, push. These scripts are called git hooks. git hooks run locally on developers machine.
 
-Every git repository by default has script for each hook you can bind to. These can be found at `.git/hooks` directory. We can update these scripts as per our need and git will execute them automatically.
+Every git repository by default has script for each hook you can bind to. These can be found at `.git/hooks` directory. We can update these scripts as per our need, rename and remove `.sample` from file name and git will execute them automatically.
 
 Now, if we want to maintain some conventions or rules for a team through git hooks, we'll need to share it between the team.&#x20;
 
