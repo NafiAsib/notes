@@ -42,3 +42,4 @@
 * [Google Docs](google-docs/README.md)
   * [Spreadsheet](google-docs/spreadsheet.md)
 * [Similar websites](similar-websites.md)
+* [Design](design.md)
