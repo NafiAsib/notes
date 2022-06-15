@@ -1,11 +1,11 @@
 # Table of contents
 
 * [Hello! 🖐](README.md)
-* [Ansible](ansible/README.md)
-  * [Desktop configuration](ansible/desktop-configuration-ansible.md)
 * [Cloud Computing](cloud-computing/README.md)
   * [AWS](cloud-computing/aws.md)
   * [GCP](cloud-computing/gcp.md)
+  * [Ansible](cloud-computing/ansible/README.md)
+    * [Desktop configuration](cloud-computing/ansible/desktop-configuration-ansible.md)
 * [Web Dev](web-dev/README.md)
   * [husky](web-dev/husky.md)
   * [Web Cache/HTTP Caching Headers](web-dev/web-cache-http-caching-headers.md)

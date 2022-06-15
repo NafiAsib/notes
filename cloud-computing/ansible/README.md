@@ -10,13 +10,13 @@ _No need to maintain a central server. So, practically no single point of failur
 
 In a general ansible scenario,
 
-![normal ansible scenario](../.gitbook/assets/image%20%282%29.png)
+![normal ansible scenario](<../../.gitbook/assets/image (2).png>)
 
 Here, ansible server centrally manages 4 machines. If one of the machine is unreachable for some reasons, ansible throws an error. But, what if you want your machine to be offline for a certain period of time? And only want them to run ansible-playbook in your specified time or time gaps?
 
 Here comes ansible-pull
 
-![typical ansible-pull scenario](../.gitbook/assets/image%20%283%29.png)
+![typical ansible-pull scenario](<../../.gitbook/assets/image (3).png>)
 
 Machines pull ansible-playbook from git server and run them locally, You can create cron jobs for specified users to have better control over ansible.
 
@@ -32,11 +32,10 @@ _I have a_ [_project_](https://github.com/NafiAsib/ansible-dots) _on managing wo
 
 ### Official Doc
 
-* [Playbook variables](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html)
-* [Git](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html) 
-* [Include task module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/include_tasks_module.html)
-* [file module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/file_module.html)
+* [Playbook variables](https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_variables.html)
+* [Git](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git\_module.html)&#x20;
+* [Include task module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/include\_tasks\_module.html)
+* [file module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/file\_module.html)
 * [lookup](https://docs.ansible.com/ansible/latest/plugins/lookup.html)
 
-_**all figures are created by me with**_ [**FigJam**](https://www.figma.com/figjam/)\*\*\*\*
-
+_**all figures are created by me with**_ [**FigJam**](https://www.figma.com/figjam/)****
