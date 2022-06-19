@@ -7,3 +7,4 @@
 ```
 
 * [3 useful CSS hacks](https://www.youtube.com/watch?v=MywezIxlp8Y) - Kevin Powell YT
+* [Use dialog for the easiest way to make a popup modal](https://www.youtube.com/watch?v=TAB\_v6yBXIE) - Kevin Powell YT
