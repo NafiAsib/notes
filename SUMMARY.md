@@ -20,6 +20,7 @@
     * [Next.js](front-end/react/next.js.md)
   * [Angular](front-end/angular.md)
   * [Tailwind CSS](front-end/tailwind-css.md)
+  * [CSS](front-end/css.md)
 * [Flutter](flutter/README.md)
   * [cubit](flutter/cubit.md)
 * [Software Architecture](software-architecture.md)
