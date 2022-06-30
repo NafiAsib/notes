@@ -6,6 +6,12 @@
 
 * [How To Use Opacity and Transparency to Create a Modal in CSS](https://www.digitalocean.com/community/tutorials/how-to-use-opacity-and-transparency-to-create-a-modal-in-css) - DigitalOcean
 
+
+
+**Rendering methods**
+
+* [CSR vs SSR vs SSG explained in 90 seconds](https://www.youtube.com/watch?v=1qgJjnSXJqg)
+
 ### Resource
 
 * [cdnjs](https://cdnjs.com/) - Collection of CDNs
