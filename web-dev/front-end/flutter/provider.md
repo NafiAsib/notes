@@ -1,5 +1,9 @@
 # provider
 
+```bash
+flutter pub add provider
+```
+
 
 
 * [Git](https://github.com/rrousselGit/provider)
