@@ -21,6 +21,7 @@
     * [Angular](web-dev/front-end/angular.md)
     * [Flutter](web-dev/front-end/flutter/README.md)
       * [cubit](web-dev/front-end/flutter/cubit.md)
+      * [flutter](web-dev/front-end/flutter/flutter.md)
     * [Tailwind CSS](web-dev/front-end/tailwind-css.md)
     * [CSS](web-dev/front-end/css.md)
 * [Software Architecture](software-architecture.md)
