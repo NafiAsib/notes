@@ -25,6 +25,7 @@
       * [provider](web-dev/front-end/flutter/provider.md)
     * [Tailwind CSS](web-dev/front-end/tailwind-css.md)
     * [CSS](web-dev/front-end/css.md)
+  * [Lerna](web-dev/lerna.md)
 * [Software Architecture](software-architecture.md)
 * [Startup](startup/README.md)
   * [Legal Issues](startup/legal-issues.md)
