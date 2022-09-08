@@ -44,7 +44,7 @@
     * [git workflows](linux-problem-solution/git/git-workflows.md)
     * [basics](linux-problem-solution/git/basics.md)
 * [Programming Language](programming-language/README.md)
-  * [JavaScript](programming-language/javascript/README.md)
+  * [JavaScript](programming-language/javascript.md)
     * [misc](programming-language/javascript/misc.md)
   * [C++](programming-language/cpp.md)
 * [Google Docs](google-docs/README.md)
