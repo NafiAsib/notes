@@ -1,6 +1,6 @@
-# JavaScript
+# misc
 
-#### Making JS objects immutable
+Making JS objects immutable
 
 ```javascript
 const person = {
@@ -48,12 +48,9 @@ person.age = 32 // TypeError: Object is not extensible
 ```
 
 {% code title="to check" %}
-```text
+```
 Object.isFrozen(person)
 Object.isSealed(person)
 Object.isExtensible(person)
 ```
 {% endcode %}
-
-
-
