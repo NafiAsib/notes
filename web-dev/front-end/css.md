@@ -15,3 +15,4 @@
 * [softr - Create beautiful svg waves](https://www.softr.io/tools/svg-wave-generator)
 * [Wavy Backgrounds with CSS & SVG](https://fireship.io/lessons/wavy-backgrounds/) - Fireship.io
 * [Creating texture in SVG much like tailwind](https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/)
+* [CSS transition 101 w/ cool tricks](https://www.joshwcomeau.com/animation/css-transitions/)
