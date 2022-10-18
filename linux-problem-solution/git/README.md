@@ -163,3 +163,14 @@ $ git remote -v
     git pull == git fetch && git merge
     git pull --rebase == git fetch && git rebase
     ```
+
+
+
+#### Resources
+
+* Read through chapter 1 \~ 3 of [Pro Git book](https://git-scm.com/book/en/v2)
+* [Learn Git Branching](https://learngitbranching.js.org/) - Interactive website to learn git branching in depth
+* [Make atomic git commits](https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits/) -&#x20;
+* [How to Write a Git Commit Message](https://cbea.ms/git-commit/#imperative) - Try to use imperative git messages
+* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) - Too many perks to ignore
+* [A Visual Guide to Git Internals — Objects, Branches, and How to Create a Repo From Scratch](https://www.freecodecamp.org/news/git-internals-objects-branches-create-repo/)
