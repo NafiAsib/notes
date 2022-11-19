@@ -13,7 +13,7 @@ If you are on Windows 10, you'll most likely want to do the following steps firs
   - Open Windows Terminal
   - Hit `ctrl+,`
 
-![default-profile-powershell](../../.gitbook/assets/default-profile-powershell.png)
+![default-profile-powershell](../.gitbook/assets/default-profile-powershell.png)
 
 Rest is same for Win 10 & 11,
 
@@ -65,7 +65,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 ```
 
-![PSReadLine](../../.gitbook/assets/psreadline.png)
+![PSReadLine](../.gitbook/assets/psreadline.png)
 
 **_You can edit and remove commands from powershell history by modifying `$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt`_**
 
