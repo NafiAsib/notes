@@ -52,4 +52,5 @@
 * [Google Docs](google-docs/README.md)
   * [Spreadsheet](google-docs/spreadsheet.md)
 * [Design](design.md)
+* [Windows](windows/terminal.md)
 * [Similar websites](similar-websites.md)
